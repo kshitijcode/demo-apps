@@ -2,8 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app1
-  labels:
-    app: app1
+  annotations:
+    prometheus.io/store: "store1"
+    prometheus.io/annotations: ".*"
 spec:
   replicas: 3
   selector:
