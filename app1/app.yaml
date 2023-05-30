@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: app1
-          image: hello-world:latest
+          image: nginx:latest
           ports:
             - containerPort: 8080
